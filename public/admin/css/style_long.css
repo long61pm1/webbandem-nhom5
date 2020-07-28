@@ -1,0 +1,62 @@
+.panel-heading {
+    position: relative;
+    height: 57px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 16px;
+    background:#ddede0;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.panel {
+    border: none ! important;
+}
+.panel-body {
+    padding: 6px ! important;
+    border: #ddede0 solid;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.panel-body button{
+    width: 50%;
+    margin-left: 25%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 0;
+}
+.pagination {
+    margin: 20px 0 0px;
+}
+ul.pagination li a {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+ul.inbox-pagination {
+    float:right;
+    list-style-type: none;
+}
+ul.inbox-pagination li {
+    float:left;
+}
+.pagination li a {
+    color: #32323a;
+}
+.inbox-pagination a.np-btn {
+    border:1px solid #e7e7e7;
+    padding:5px 15px;
+    display:inline-block;
+    background:#fcfcfc;
+    color:#afafaf;
+    border-radius:3px !important;
+    -webkit-border-radius:3px !important;
+}
