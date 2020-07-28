@@ -49,7 +49,7 @@
                 ?>
                 {{ csrf_field() }}
                 <div class="wrap-input100 validate-input" data-validate = "Enter username">
-                    <input class="input100" type="text" name="admin_email" placeholder="Username">
+                    <input class="input100" type="text" name="admin_username" placeholder="Username">
                     <span class="focus-input100" data-placeholder="&#xf207;"></span>
                 </div>
 
