@@ -5,12 +5,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Add-Brand</h1>
+                    <h1 class="m-0 text-dark">Edit-Brand</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{URL::to('/dashboard')}}">Home</a></li>
-                        <li class="breadcrumb-item active">Add-brand</li>
+                        <li class="breadcrumb-item active">Edit-brand</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -48,7 +48,7 @@
                                               placeholder="Mô tả Thương Hiệu">{{$edit_value->brand_desc}}
                                 </textarea>
                                 </div>
-                                <button type="submit" name="add_brand_product" class="btn btn-info">Cập nhật Thương Hiệu</button>
+                                <button type="submit" name="edit_brand_product" class="btn btn-info">Cập nhật Thương Hiệu</button>
                             </form>
                         @endforeach
                     </div>
