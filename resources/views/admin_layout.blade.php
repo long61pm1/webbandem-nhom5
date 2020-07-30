@@ -204,7 +204,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-copy"></i>
+                            <i class="nav-icon fas fa-stream"></i>
                             <p>
                                  Danh Mục Sản Phẩm
                                 <i class="fas fa-angle-left right"></i>
@@ -214,14 +214,38 @@
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a href="{{URL::to('/add-category-product')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Thêm sản phẩm</p>
+                                    <i class="far fa-circle nav-icon text-warning"></i>
+                                    <p>Thêm danh mục SP</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{URL::to('/all-category-product')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Danh sách sản phẩm</p>
+                                    <i class="far fa-circle nav-icon text-info"></i>
+                                    <p>Liệu kê danh mục SP</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-industry"></i>
+                            <p>
+                                Thương Hiệu Sản Phẩm
+                                <i class="fas fa-angle-left right"></i>
+                                {{--                                <span class="badge badge-info right">6</span>--}}
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{URL::to('/add-brand-product')}}" class="nav-link">
+                                    <i class="far fa-circle nav-icon text-warning"></i>
+                                    <p>Thêm thương hiệu SP</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{URL::to('/all-brand-product')}}" class="nav-link">
+                                    <i class="far fa-circle nav-icon text-info"></i>
+                                    <p>Liệt kê thương hiệu SP</p>
                                 </a>
                             </li>
                         </ul>
