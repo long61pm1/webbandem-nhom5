@@ -10,12 +10,12 @@
                     <img src="{{asset('public/uploads/products/'.$pro->product_image)}}" alt="">
                     <div class="pi-links">
                         <a href="#" class="add-card"><i
-                                class="flaticon-bag"></i><span>ADD TO CART</span></a>
-                        <a href="#" class="wishlist-btn"><i class="fa fa-play-circle-o"></i></a>
+                                class="flaticon-bag"></i><span>THÊM VÀO GIỎ</span></a>
+                        <a href="{{URL::to('/product-detail/'.$pro->product_id)}}" class="wishlist-btn"><i class="fa fa-play-circle-o"></i></a>
                     </div>
                 </div>
                 <div class="pi-text">
-                    <h6>${{$pro->product_price}}</h6>
+                    <h6>{{number_format($pro->product_price)}} VNĐ</h6>
                     <p>{{$pro->product_name}}</p>
                 </div>
             </div>

@@ -86,7 +86,7 @@
                         <h2 class="fw-title">Thương hiệu</h2>
                         <ul class="category-menu">
                             @foreach($brand as $key=> $v_brand)
-                            <li><a href="#">{{$v_brand->brand_name}}
+                            <li><a href="{{URL::to('list-pro-by-brand/'.$v_brand->brand_id)}}">{{$v_brand->brand_name}}
                                     <?php
                                         $count=0;
                                         foreach ($all_product as $key=> $pro){
