@@ -57,3 +57,6 @@ Route::get('/active-product/{product_id}','ProductController@active_product');
 
 Route::post('/save-product','ProductController@save_product');
 Route::post('/update-product/{product_id}','ProductController@update_product');
+
+//home
+Route::get('/product-select','HomeController@select_product');

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <title>Divisima | eCommerce Template</title>
+    <title>WebSite Bán Đệm</title>
     <meta charset="UTF-8">
-    <meta name="description" content=" Divisima | eCommerce Template">
-    <meta name="keywords" content="divisima, eCommerce, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{--    <meta name="description" content=" Divisima | eCommerce Template">--}}
+{{--    <meta name="keywords" content="divisima, eCommerce, creative, html">--}}
+{{--    <meta name="viewport" content="width=device-width, initial-scale=1.0">--}}
     <!-- Favicon -->
-    <link href="{{asset('public/user/img/favicon.ico')}}" rel="shortcut icon"/>
+    <link href="{{asset('public/admin/images/logo.png')}}" rel="shortcut icon"/>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+{{--    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">--}}
 
 
     <!-- Stylesheets -->
@@ -75,9 +75,8 @@
         <div class="container">
             <!-- menu -->
             <ul class="main-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Men</a></li>
+                <li><a href="{{URL::to('/trang-chu')}}">Trang Chủ</a></li>
+                <li><a href="{{URL::to('/product-select')}}">Sản Phẩm</a></li>
                 <li><a href="#">Jewelry
                         <span class="new">New</span>
                     </a></li>
@@ -172,19 +171,19 @@
                     <h2>Questions</h2>
                     <div class="con-info">
                         <span>C.</span>
-                        <p>Your Company Ltd </p>
+                        <p>LongCongDdao Ltd </p>
                     </div>
                     <div class="con-info">
                         <span>B.</span>
-                        <p>1481 Creekside Lane  Avila Beach, CA 93424, P.O. BOX 68 </p>
+                        <p>55 Giải Phóng,2 Bà Trưng, Hà Nội</p>
                     </div>
                     <div class="con-info">
                         <span>T.</span>
-                        <p>+53 345 7953 32453</p>
+                        <p>+89 356789900</p>
                     </div>
                     <div class="con-info">
                         <span>E.</span>
-                        <p>office@youremail.com</p>
+                        <p>long143961@nuce.edu.vn</p>
                     </div>
                 </div>
             </div>
@@ -193,17 +192,17 @@
     <div class="social-links-warp">
         <div class="container">
             <div class="social-links">
-                <a href="" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
-                <a href="" class="google-plus"><i class="fa fa-google-plus"></i><span>g+plus</span></a>
-                <a href="" class="pinterest"><i class="fa fa-pinterest"></i><span>pinterest</span></a>
-                <a href="" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
-                <a href="" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
-                <a href="" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
-                <a href="" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
+                <a href="https://www.instagram.com/__long_ml___/" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
+                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i><span>g+plus</span></a>
+                <a href="#" class="pinterest"><i class="fa fa-pinterest"></i><span>pinterest</span></a>
+                <a href="https://www.facebook.com/longmolo" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
+                <a href="https://www.youtube.com/c/longm%E1%BB%9Dl%E1%BB%9D" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
+                <a href="#" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
             </div>
 
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            <p class="text-white text-center mt-5">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+            <p class="text-white text-center mt-5">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> <a href="#" target="_blank"> Long CĐ</a> <i class="fa fa-heart-o" aria-hidden="true"></i></p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
         </div>
