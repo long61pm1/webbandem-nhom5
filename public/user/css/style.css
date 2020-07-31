@@ -1542,7 +1542,10 @@ ol {
 	border: 2px solid #f51167;
 	z-index: 1;
 }
-
+.pt img{
+    height: 100%;
+    object-fit: cover;
+}
 .product-details .p-title {
 	font-size: 18px;
 	font-weight: 700;

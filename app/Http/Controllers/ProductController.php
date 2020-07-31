@@ -141,4 +141,28 @@ class ProductController extends Controller
         return Redirect::to('all-product');
 
     }
+
+    //End Admin Page
+    public function product_detail($product_id){
+        $cate_product = DB::table('tbl_category_product')->where('category_status','1')->orderby('category_id','desc')->get();
+        $brand_product = DB::table('tbl_brand_product')->where('brand_status','1')->orderby('brand_id','desc')->get();
+
+        $details_product = DB::table('tbl_product')
+            ->join('tbl_category_product','tbl_category_product.category_id','=','tbl_product.category_id')
+            ->join('tbl_brand_product','tbl_brand_product.brand_id','=','tbl_product.brand_id')
+            ->where('tbl_product.product_id',$product_id)->get();
+
+        foreach ($details_product as $key=>$value){
+            $category_id = $value->category_id;
+        }
+
+        $related_product = DB::table('tbl_product')
+            ->join('tbl_category_product','tbl_category_product.category_id','=','tbl_product.category_id')
+            ->join('tbl_brand_product','tbl_brand_product.brand_id','=','tbl_product.brand_id')
+            ->where('tbl_category_product.category_id',$category_id)->whereNotIn('tbl_product.product_id',[$product_id])->get();
+//        echo '<pre>';
+//        print_r($related_product);
+//        echo '</pre>';
+        return view('pages.product_detail')->with('category',$cate_product)->with('brand',$brand_product)->with('product_details',$details_product)->with('relate',$related_product);
+    }
 }

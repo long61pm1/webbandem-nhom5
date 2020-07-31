@@ -4,7 +4,7 @@
     <!-- Page info -->
     <div class="page-top-info">
         <div class="container">
-            <h4>TRANG DANH MỤC</h4>
+            <h4>TRANG SẢN PHẨM</h4>
             <div class="site-pagination">
                 <a href="{{URL::to('/trang-chu')}}">Home</a> /
                 <a href="">Shop</a> /
