@@ -6,8 +6,8 @@
         <div class="container">
             <h4>TRANG SẢN PHẨM</h4>
             <div class="site-pagination">
-                <a href="{{URL::to('/trang-chu')}}">Home</a> /
-                <a href="">Shop</a> /
+                <a href="{{URL::to('/trang-chu')}}">Trang Chủ</a> /
+                <a href="">Cửa Hàng</a> /
             </div>
         </div>
     </div>

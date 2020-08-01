@@ -62,3 +62,7 @@ Route::post('/update-product/{product_id}','ProductController@update_product');
 Route::get('/product-select','HomeController@select_product');
 Route::get('/list-pro-by-brand/{brand_id}','BrandProduct@list_product_by_brand');
 Route::get('/product-detail/{product_id}','ProductController@product_detail');
+
+Route::post('/save-cart','CartController@save_cart');
+Route::get('/show-cart','CartController@show_cart');
+Route::get('/delete-to-cart/{rowId}','CartController@delete_to_cart');
