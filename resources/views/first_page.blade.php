@@ -47,26 +47,41 @@
                         <img src="{{asset('public/user/img/logo.png')}}" alt="">
                     </a>
                 </div>
-                <div class="col-xl-6 col-lg-5">
+                <div class="col-xl-5 col-lg-4">
                     <form class="header-search-form">
                         <input type="text" placeholder="Search on divisima ....">
                         <button><i class="flaticon-search"></i></button>
                     </form>
                 </div>
-                <div class="col-xl-4 col-lg-5">
-                    <div class="user-panel">
+                <div class="col-xl-4 col-lg-5" style="padding: unset" >
+                    <div class="user-panel" style="float: right">
                         <div class="up-item">
                             <i class="flaticon-profile"></i>
-                            <a href="#">Sign</a> In or <a href="#">Create Account</a>
+                            <a href="{{URL::to('/login-checkout')}}" style="color: blue">Đăng Nhập</a> hoặc <a href="{{URL::to('/register')}}" style="color: blue">Tạo Tài Khoản</a>
                         </div>
                         <div class="up-item">
                             <div class="shopping-card">
                                 <i class="flaticon-bag"></i>
-                                <span>0</span>
+                                <span>
+                                    <?php
+                                    $content = Cart::count();
+                                    echo $content;
+                                    ?>
+                                </span>
                             </div>
                             <a href="{{URL::to('/show-cart')}}">Giỏ hàng của tôi</a>
                         </div>
                     </div>
+                </div>
+                <div class="main-menu col-xl-1 col-lg-1" style="padding-top: 0.5%">
+                    <li><i class="fa fa-cog" style="border: 1px black solid; padding: 5px;"></i>
+                        <ul class="sub-menu">
+                            <li><a href="#">Trang cá nhân</a></li>
+                            <li><a href="#">Đổi mật khẩu</a></li>
+                            <li><a href="#">lịch sử mua hàng</a></li>
+                            <li><a href="#">đăng xuất</a></li>
+                        </ul>
+                    </li>
                 </div>
             </div>
         </div>
