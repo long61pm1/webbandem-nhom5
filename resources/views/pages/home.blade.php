@@ -98,7 +98,7 @@
                     <div class="tag-new">New</div>
                     <img src="{{asset('public/uploads/products/'.$pro->product_image)}}" alt="">
                     <div class="pi-links">
-                        <a href="#" class="add-card"><i class="flaticon-bag"></i><span>Thêm vào giỏ</span></a>
+                        <a href="{{URL::to('/add-to-cart/'.$pro->product_id)}}" class="add-card"><i class="flaticon-bag"></i><span>Thêm vào giỏ</span></a>
                         <a href="{{URL::to('/product-detail/'.$pro->product_id)}}" class="wishlist-btn"><i class="fa fa-play-circle-o"></i></a>
                     </div>
                 </div>
@@ -255,7 +255,9 @@
             </div>
         </div>
         <div class="text-center pt-5">
-            <button class="site-btn sb-line sb-dark">XEM THÊM</button>
+            <a href="{{URL::to('/product-select')}}">
+                <button class="site-btn sb-line sb-dark" >XEM THÊM</button>
+            </a>
         </div>
     </div>
 </section>
@@ -267,9 +269,9 @@
     <div class="container">
         <div class="banner set-bg" data-setbg="{{asset('public/user/img/banner-bg.jpg')}}">
             <div class="tag-new">NEW</div>
-            <span>New Arrivals</span>
-            <h2>STRIPED SHIRTS</h2>
-            <a href="#" class="site-btn">SHOP NOW</a>
+            <span>Đệm mới nhất</span>
+            <h2>SIÊU ĐẸP, CHẤT LƯỢNG</h2>
+            <a href="{{URL::to('/product-select')}}" class="site-btn">MUA NGAY</a>
         </div>
     </div>
 </section>

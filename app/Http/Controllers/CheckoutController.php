@@ -20,5 +20,8 @@ class CheckoutController extends Controller
     public function register_user(){
         return view('pages.login_register.user_register');
     }
+    public function checkout(){
+        echo Session::get('user_id');
+    }
 
 }

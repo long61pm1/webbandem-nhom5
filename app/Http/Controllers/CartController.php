@@ -46,4 +46,15 @@ class CartController extends Controller
         Cart::update($rowId,$qty);
         return Redirect::to('/show-cart');
     }
+    public function add_to_cart($product_id){
+        $product_info = DB::table('tbl_product')->where('product_id',$product_id)->first();
+        $data['id'] = $product_info->product_id;
+        $data['qty'] = '1';
+        $data['name'] = $product_info->product_name;
+        $data['price'] = $product_info->product_price;
+        $data['weight'] = $product_info->product_price;
+        $data['options']['image'] = $product_info->product_image;
+        Cart::add($data);
+        return Redirect::to('/product-select');
+    }
 }

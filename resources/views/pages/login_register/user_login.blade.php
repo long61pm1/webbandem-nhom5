@@ -1,6 +1,6 @@
 @extends('user_login_register')
 @section('log_content')
-<form id="form1" name="form1" class="form-horizontal" action="{{URL::to('/user-checkout')}}" method="post">
+<form id="form1" name="form1" class="form-horizontal" action="{{URL::to('/user-login')}}" method="post">
     <div class="page-container">
         <!-- 8.1 home section -->
         <div class="home-section">

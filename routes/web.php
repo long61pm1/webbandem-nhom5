@@ -67,7 +67,12 @@ Route::post('/save-cart','CartController@save_cart');
 Route::get('/show-cart','CartController@show_cart');
 Route::get('/delete-to-cart/{rowId}','CartController@delete_to_cart');
 Route::post('/update-cart-quantity','CartController@update_cart_quantity');
+Route::get('/add-to-cart/{product_id}','CartController@add_to_cart');
 
 //checkout
 Route::get('/login-checkout','CheckoutController@login_checkout');
 Route::get('/register','CheckoutController@register_user');
+Route::post('/confirm-register','UserController@user_register');
+Route::post('/user-login','UserController@user_login');
+Route::get('/checkout','CheckoutController@checkout');
+Route::get('/logout-user','UserController@logout_user');

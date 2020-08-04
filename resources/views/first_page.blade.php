@@ -7,7 +7,7 @@
 {{--    <meta name="keywords" content="divisima, eCommerce, creative, html">--}}
 {{--    <meta name="viewport" content="width=device-width, initial-scale=1.0">--}}
     <!-- Favicon -->
-    <link href="{{asset('public/admin/images/logo.png')}}" rel="shortcut icon"/>
+    <link href="{{asset('public/user/img/logo_long.png')}}" rel="shortcut icon"/>
 
     <!-- Google Font -->
 {{--    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">--}}
@@ -41,13 +41,13 @@
     <div class="header-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 text-center text-lg-left">
+                <div class="col-lg-1 text-center text-lg-left">
                     <!-- logo -->
                     <a href="{{URL::to('/trang-chu')}}" class="site-logo">
-                        <img src="{{asset('public/user/img/logo.png')}}" alt="">
+                        <img src="{{asset('public/user/img/logo_long.png')}}" alt="logo" height="50px">
                     </a>
                 </div>
-                <div class="col-xl-5 col-lg-4">
+                <div class="col-xl-6 col-lg-5">
                     <form class="header-search-form">
                         <input type="text" placeholder="Search on divisima ....">
                         <button><i class="flaticon-search"></i></button>
@@ -56,8 +56,17 @@
                 <div class="col-xl-4 col-lg-5" style="padding: unset" >
                     <div class="user-panel" style="float: right">
                         <div class="up-item">
+                            <?php
+                            use Illuminate\Support\Facades\Session;
+                                if (Session::get('user_id')){
+                                    echo 'Chào '.Session::get('user_name');
+                                }else{
+                            ?>
                             <i class="flaticon-profile"></i>
                             <a href="{{URL::to('/login-checkout')}}" style="color: blue">Đăng Nhập</a> hoặc <a href="{{URL::to('/register')}}" style="color: blue">Tạo Tài Khoản</a>
+                            <?php
+                            }
+                            ?>
                         </div>
                         <div class="up-item">
                             <div class="shopping-card">
@@ -79,7 +88,7 @@
                             <li><a href="#">Trang cá nhân</a></li>
                             <li><a href="#">Đổi mật khẩu</a></li>
                             <li><a href="#">lịch sử mua hàng</a></li>
-                            <li><a href="#">đăng xuất</a></li>
+                            <li><a href="{{URL::to('/logout-user')}}">đăng xuất</a></li>
                         </ul>
                     </li>
                 </div>
@@ -110,7 +119,7 @@
 <section class="footer-section">
     <div class="container">
         <div class="footer-logo text-center">
-            <a href="index.html"><img src="{{asset('public/user/img/logo-light.png')}}" alt=""></a>
+            <a href="index.html"><img src="{{asset('public/user/img/logo_long.png')}}" alt=""></a>
         </div>
         <div class="row">
             <div class="col-lg-3 col-sm-6">
